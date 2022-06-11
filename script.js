@@ -13,16 +13,30 @@ function start() {
     startbtn.classList.add("not-active");
     startTimer = setInterval(()=>{
         sec++;
-        sec = (sec<10)? "0"+sec: sec;
+        if(sec < 10){
+            sec = "0" + sec;
+        }else{
+            sec = sec;
+        }
         if(sec == 60){
             min++;
-            min = (min<10)? "0"+min : min;
+            if(min < 10){
+                min = "0" + min;
+            }else{
+                min = min;
+            }
+           
             sec = "0" +0;
        
         }
         if(min == 60){
             hour++;
-            hour = (hour<10)? "0"+hour : hour;
+            
+            if(hour < 10){
+                hour = "0" + hour;
+            }else{
+                hour = hour;
+            }
             min = "0" +0;
             sec = "0" +0;
         }
