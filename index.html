@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Start of HTML Page -->
+<html>
+    <!-- Start of Head Tag -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Stop Watch</title>
+        <!-- Fontawesome stylesheet link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- External Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+        <!-- End of Head tag -->
+    </head>
+     <!-- Start of Body Tag -->
+    <body>
+        <!-- Start of Stop Watch Container -->
+       
+        <div class="container">
+            <div class="info">
+                <span> HH</span>
+                <span> MM</span>
+                <span> SS</span>
+            </div>
+            <!-- Time Information display related code  -->
+            <div class="time-container">
+                <span class="hour">00</span>
+                <span class="colon">:</span>
+                <span class="min">00</span>
+                <span class="colon">:</span>
+                <span class="sec">00</span>
+            </div>
+            <div class="btns">
+                <button class="start" id="start" onclick="start()"> <i class="fa-solid fa-play"></i><span> Start</span> </button>
+                <button class="stop" id="stop" onclick="stop()"> <i class="fa-solid fa-stop"></i><span> Stop</span>  </button>
+                <button class="reset" id="reset" onclick="reset()"> <i class="fa-solid fa-redo"></i> Reset </button>
+            </div>
+            <!-- End of Stop Watch Container -->
+        </div>
+    <!-- FontAwesome related JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--JavaScript file for this page -->
+    <script src="script.js"></script>
+    <!-- End of Body Tag -->
+    </body>
+    <!-- End of HTML Page -->
+</html>
